@@ -1,13 +1,13 @@
-# 
-# File Header
+# Evan Sauers
+# pigify.py
 #
 # Define vowels
-
 vowels = "aeiouAEIOU"
 
 # Loop through word, one letter at a time
-n = 0, endword = ""
 def piggy(word):
+	n = 0
+	endword = ""
 	for letter in word:
 		# Check if letter is a vowel
 		if letter in vowels:
@@ -18,8 +18,6 @@ def piggy(word):
 			pig = word[1:] + word[0] + "ay"
 	return pig
 
-
-#Ask for word
-
+#Ask the user to input a word
 word = input("Please enter a word: ")
 print (piggy(word))
